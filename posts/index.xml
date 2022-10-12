@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on trashcan.icu</title>
-    <link>https://trashcan.icu/posts/</link>
-    <description>Recent content in Posts on trashcan.icu</description>
+    <title>Posts on wsmbsbbz.github.io</title>
+    <link>https://wsmbsbbz.github.io/posts/</link>
+    <description>Recent content in Posts on wsmbsbbz.github.io</description>
     <image>
-      <url>https://trashcan.icu/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://trashcan.icu/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://wsmbsbbz.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wsmbsbbz.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://trashcan.icu/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MIT6.824 MapReduce实验记录</title>
-      <link>https://trashcan.icu/posts/mit6.824-lab1-mapreduce/</link>
+      <link>https://wsmbsbbz.github.io/posts/mit6.824-lab1-mapreduce/</link>
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trashcan.icu/posts/mit6.824-lab1-mapreduce/</guid>
+      <guid>https://wsmbsbbz.github.io/posts/mit6.824-lab1-mapreduce/</guid>
       <description>MIT6.824 MapReduce实验记录 注：6.824 在2022年春季添加了一个新的jobcount test，但由于我看不懂这个测试代码。经我测试，本文的程序能通过2021年的所有test cases，但是2022年的测试会jobcount test FAIL
 实验分析 用Go实现MapReduce的Coordinator(Master)和Worker程序。MapReduce程序模型见下图，paper和Lecture中讲的非常详细，不再过多介绍。
 结构设计 RPC 首先是RPC参数的设计，定义一个Task结构体，Coordinator应该根据Task来维护整个MapReduce的状态和进度，Worker也应该能从Task中获取到足够的数据进行Map和Reduce
@@ -26,20 +26,20 @@ type Coordinator struct { mu sync.Mutex state int // mapping: 1, reducing: 2, al
     
     <item>
       <title>浅析 Go 语言切片 append 函数的内存扩张机制</title>
-      <link>https://trashcan.icu/posts/a-brief-analysis-of-the-memory-expansion-mechanism-of-append-function-in-go-language-slice/</link>
+      <link>https://wsmbsbbz.github.io/posts/a-brief-analysis-of-the-memory-expansion-mechanism-of-append-function-in-go-language-slice/</link>
       <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://trashcan.icu/posts/a-brief-analysis-of-the-memory-expansion-mechanism-of-append-function-in-go-language-slice/</guid>
+      <guid>https://wsmbsbbz.github.io/posts/a-brief-analysis-of-the-memory-expansion-mechanism-of-append-function-in-go-language-slice/</guid>
       <description>疑问 今天在做剑指 Offer 34. 二叉树中和为某一值的路径这道题目时，我一开始写出了如下的代码：
 func pathSum(root *TreeNode, target int) (ans [][]int) { var dfs func(node *TreeNode, sum int, vals []int) dfs = func(node *TreeNode, sum int, vals []int) { // fmt.Printf(&amp;#34;ptr:%p, val:%v\n&amp;#34;, vals, vals) if node != nil { vals = append(vals, node.Val) sum += node.Val // if leaf node and sum is equal to target if node.Left == nil &amp;amp;&amp;amp; node.Right == nil &amp;amp;&amp;amp; sum == target { // fmt.</description>
     </item>
     
     <item>
       <title>“时间记录法”阶段性总结</title>
-      <link>https://trashcan.icu/posts/summary-for-time-tracking/</link>
+      <link>https://wsmbsbbz.github.io/posts/summary-for-time-tracking/</link>
       <pubDate>Mon, 09 May 2022 00:37:54 +0000</pubDate>
       
-      <guid>https://trashcan.icu/posts/summary-for-time-tracking/</guid>
+      <guid>https://wsmbsbbz.github.io/posts/summary-for-time-tracking/</guid>
       <description>起因 我在读李笑来老师的《把时间当作朋友》时，了解到了前苏联科学家柳比歇夫和他的“时间记录法”，我还特意去读了写柳比歇夫的传记《奇特的一生》。虽然这本书的内容大多是传记作者对柳比歇夫的鼓吹，没有什么价值，我也没有读完，但是书中提到的柳比歇夫使用的“时间记录法”给我留下了很深刻的印象。在网上查阅了足够的资料后，我认为这个方法有非常高的实用价值，也刚好和我“想把生活中的很多方面数据化”的想法不谋而合，于是我就开始使用这个方法了。
 执行 大体上来讲，“时间记录法”是把自己每天做的有价值的事情和做这些事消耗的时间给记录下来，每月、季、年可以分析一下自己做了哪些事情、自己近期学习状态如何等等。这给我们生活、学习的规划和分析在时间方面上提供了数据支持，让我们可以刨除自己不准确的“感觉”，用科学、严谨的方式来剖析自我，再而改善自己的学习、生活质量。
 对于“所做的事情是否有价值”，人人都有自己的概念，对我来说，我把我认为有价值的时间简要分为两类：
@@ -54,10 +54,10 @@ I 类时间：专注、认真地学习系统性、体系性、可繁殖性的知
     
     <item>
       <title>LeetCode 刷题 100 道总结</title>
-      <link>https://trashcan.icu/posts/summary-for-100-leetcode-questions/</link>
+      <link>https://wsmbsbbz.github.io/posts/summary-for-100-leetcode-questions/</link>
       <pubDate>Fri, 29 Apr 2022 19:32:45 +0000</pubDate>
       
-      <guid>https://trashcan.icu/posts/summary-for-100-leetcode-questions/</guid>
+      <guid>https://wsmbsbbz.github.io/posts/summary-for-100-leetcode-questions/</guid>
       <description>年初的时候我定下了今年刷够 300 道 LeetCode 算法题的目标，到 4 月 21 日，我已经刷够了100道题，按照每 4 个月 100 道题来算，今年的目标应该是能够达成的。
 学而不思则罔，利用 4 月底的这几天时间，我对我的刷题心得做一个简单的总结。
 算法题，其实也就这么回事 年初我刚开始写 LeetCode 的时候，真是连个简单题都没有思路，写不出来。我一度感觉十分沮丧，感觉自己智商受到打击了，但这其实是再正常不过的情况了，写代码本身就是需要很长时间学习思考、经历很久的练习之后才能做好的事情。
@@ -75,10 +75,10 @@ LeetCode 的评论区很有趣，大伙都喜欢在这里自黑：
     
     <item>
       <title>2022年初习惯性发愤图强</title>
-      <link>https://trashcan.icu/posts/goals-for-2022/</link>
+      <link>https://wsmbsbbz.github.io/posts/goals-for-2022/</link>
       <pubDate>Thu, 06 Jan 2022 22:49:42 +0000</pubDate>
       
-      <guid>https://trashcan.icu/posts/goals-for-2022/</guid>
+      <guid>https://wsmbsbbz.github.io/posts/goals-for-2022/</guid>
       <description>转眼又是一年过去了，虽然也感觉忙忙碌碌，但是仔细盘算一下其实也没学到多少真东西。不过这一年里也算是有点感想，让我能发现自己的一些问题，长话短说，这一年里我最值得说的地方有两点：
 把原来的Windows笔记本卖了换了MacBook 认识到自己学的知识大多只在应用层，偏离了根本 MacBook 在以前我用的笔记本电脑是机械革命 Code01 16+512G，2020年7月花费4999元在京东买的，说实话这台电脑我还是比较满意的，91Wh电池续航很长，键盘按键够大，手感也不错，虽说是个轻薄本但是也能满足我偶尔打打独立游戏的需求。然后在2021年7月份我有机会把旧电脑卖掉换了MacBook Air M1 8+256G 澳门版，6099元购于闲鱼，价格属实便宜。
 换了MacBook之后，发现这玩意真的爽，续航长的离谱，49.9Wh的电池在图书馆（得开高亮度）能用8个小时左右，触控板也顺滑的不得了，屏幕、音响都非常顶级，偶尔打打空洞骑士这种小型独立游戏也没问题……当然，最令我惊奇的还是苹果的操作系统macOS，这个有点难说明，只有用过这玩意才知道有多爽。尤其是类Unix系统的Shell(命令行)直接导致了我改变了专业技术的学习方向和兴趣，让我下定决心要学习一些更硬核、更根本的技术（相较于正常的应用层的比如说编程语言或者框架的学习）。
@@ -92,10 +92,10 @@ Python 一点爬虫 C语言 一点点Flutter JavaScript、HTML、CSS 不过大�
     
     <item>
       <title>我写代码的神兵利器 —— NeoVim</title>
-      <link>https://trashcan.icu/posts/my-lua-neovim-config/</link>
+      <link>https://wsmbsbbz.github.io/posts/my-lua-neovim-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trashcan.icu/posts/my-lua-neovim-config/</guid>
+      <guid>https://wsmbsbbz.github.io/posts/my-lua-neovim-config/</guid>
       <description>前言 最近几天参考 LunarVim/Neovim-from-scratch 把我的 NeoVim 配置从 VimScript 转换为纯 Lua 了。
 我原来用 NeoVim 只是写点 demo 和小脚本，凑合配置了个好看的主题和代码补全就已经能满足我的使用要求了。但是最近我在学习麻省理工的操作系统课程 MIT6.S081，这个课程的 Labs 需要查看和修改 xv6 操作系统的代码，这是一个比较庞大的项目，我的 NeoVim 配置就有点不够看了，于是最近几天我就重写了一套配置，目前已经达到了理想中的效果。
 GitHub: wsmbsbbz/lua-nvim-config
@@ -105,10 +105,10 @@ GitHub: wsmbsbbz/lua-nvim-config
     
     <item>
       <title>有关“听道理”的一点思考</title>
-      <link>https://trashcan.icu/posts/few-thought-about-listen-reason/</link>
+      <link>https://wsmbsbbz.github.io/posts/few-thought-about-listen-reason/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trashcan.icu/posts/few-thought-about-listen-reason/</guid>
+      <guid>https://wsmbsbbz.github.io/posts/few-thought-about-listen-reason/</guid>
       <description>最近对待“如何对待别人讲的道理”有一些思考，在这里分享出来。
 谨慎对待二手道理 生活中，总是充满了人生并不怎么成功，讲起道理却头头是道的人。
 我们首先要知道，听任何人讲道理都不能让我们真正理解这个道理。
