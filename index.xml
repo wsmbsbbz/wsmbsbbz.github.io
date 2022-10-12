@@ -17,7 +17,7 @@
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://wsmbsbbz.github.io/posts/mit6.824-lab1-mapreduce/</guid>
-      <description>MIT6.824 MapReduce实验记录 注：6.824 在2022年春季添加了一个新的jobcount test，但由于我看不懂这个测试代码。经我测试，本文的程序能通过2021年的所有test cases，但是2022年的测试会jobcount test FAIL
+      <description>注：6.824 在2022年春季添加了一个新的jobcount test，但由于我看不懂这个测试代码。经我测试，本文的程序能通过2021年的所有test cases，但是2022年的测试会jobcount test FAIL
 实验分析 用Go实现MapReduce的Coordinator(Master)和Worker程序。MapReduce程序模型见下图，paper和Lecture中讲的非常详细，不再过多介绍。
 结构设计 RPC 首先是RPC参数的设计，定义一个Task结构体，Coordinator应该根据Task来维护整个MapReduce的状态和进度，Worker也应该能从Task中获取到足够的数据进行Map和Reduce
 type Task struct { TaskNum int // task编号 TaskType int // map: 1, reduce: 2, taskAllDone: 3 FName string // 待读取的文件名称 NMap int // map tasks数量 NReduce int // reduce tasks数量，MapReduce结束之后要生成NReduce个output files } Coordinator Coordinator要用一个mutex锁来原子化更改和读取它的字段，防止发生race，以此保证MapReduce进程的状态和进度正确。
