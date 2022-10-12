@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Drafts on trashcan.icu</title>
+    <link>https://trashcan.icu/drafts/</link>
+    <description>Recent content in Drafts on trashcan.icu</description>
+    <image>
+      <url>https://trashcan.icu/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://trashcan.icu/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://trashcan.icu/drafts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://trashcan.icu/drafts/mit6s081-lab-fs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trashcan.icu/drafts/mit6s081-lab-fs/</guid>
+      <description>Large files 目标：使用二级间接块让 xv6 操作系统支持更大的文件大小</description>
+    </item>
+    
+  </channel>
+</rss>
