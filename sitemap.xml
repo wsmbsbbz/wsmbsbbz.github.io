@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wsmbsbbz.github.io/posts/mit6.824-lab1-mapreduce/</loc>
-    <lastmod>2022-10-12T00:00:00+00:00</lastmod>
+    <loc>https://wsmbsbbz.github.io/posts/2022-10-time-tracking/</loc>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wsmbsbbz.github.io/posts/</loc>
-    <lastmod>2022-10-12T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wsmbsbbz.github.io/tags/</loc>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wsmbsbbz.github.io/</loc>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wsmbsbbz.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/</loc>
+    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wsmbsbbz.github.io/posts/mit6.824-lab1-mapreduce/</loc>
     <lastmod>2022-10-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wsmbsbbz.github.io/posts/a-brief-analysis-of-the-memory-expansion-mechanism-of-append-function-in-go-language-slice/</loc>
@@ -20,6 +29,9 @@
     <loc>https://wsmbsbbz.github.io/posts/summary-for-100-leetcode-questions/</loc>
     <lastmod>2022-04-29T19:32:45+00:00</lastmod>
   </url><url>
+    <loc>https://wsmbsbbz.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <lastmod>2022-04-29T19:32:45+00:00</lastmod>
+  </url><url>
     <loc>https://wsmbsbbz.github.io/posts/goals-for-2022/</loc>
     <lastmod>2022-01-06T22:49:42+00:00</lastmod>
   </url><url>
@@ -28,10 +40,6 @@
     <loc>https://wsmbsbbz.github.io/categories/</loc>
   </url><url>
     <loc>https://wsmbsbbz.github.io/drafts/</loc>
-  </url><url>
-    <loc>https://wsmbsbbz.github.io/tags/</loc>
-  </url><url>
-    <loc>https://wsmbsbbz.github.io/tags/%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/</loc>
   </url><url>
     <loc>https://wsmbsbbz.github.io/posts/my-lua-neovim-config/</loc>
   </url><url>

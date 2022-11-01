@@ -10,7 +10,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022年10月总结</title>
+      <link>https://wsmbsbbz.github.io/posts/2022-10-time-tracking/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wsmbsbbz.github.io/posts/2022-10-time-tracking/</guid>
+      <description>月总专注时间：4625min
+最大值：365min
+最小值：0min
+平均每日专注时间：149min
+主要做的事情：
+学习MIT6.824 读了4篇papers 完成了Lab MapReduce和Lab Raft的Leader Election部分 读书： 《异类》——马尔科姆·格拉德威尔 LeetCode算法题49道 5场LeetCode周赛/双周赛 写了一篇博客MIT6.824 MapReduce实验记录 发现的问题：
+非专业类书籍阅读太少 英语阅读速度慢，读papers非常耗时 学习进度推进不规律，状态时好时坏 日均专注时长距离240min的目标仍有较大差距 一些统计：
+英语词汇量：6600 打字速度： 中文：116 英文：331 咖啡：26天 跑步半小时，20+天（下个月开始具体记录） LeetCode竞赛分：1730 这个月最大的变化是心态上的一些转变：开始实践斯多葛主义，专注于做的事情本身，尽可能不去关注事情的结果。相比于外界的赞赏和激励，更应该守好自己内心中的一亩三分地，尽人事听天命，半躺平式地在乱世中求安宁。</description>
+    </item>
+    
     <item>
       <title>MIT6.824 MapReduce实验记录</title>
       <link>https://wsmbsbbz.github.io/posts/mit6.824-lab1-mapreduce/</link>

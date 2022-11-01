@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>计算机 on wsmbsbbz.github.io</title>
+    <link>https://wsmbsbbz.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    <description>Recent content in 计算机 on wsmbsbbz.github.io</description>
+    <image>
+      <url>https://wsmbsbbz.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://wsmbsbbz.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 29 Apr 2022 19:32:45 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode 刷题 100 道总结</title>
+      <link>https://wsmbsbbz.github.io/posts/summary-for-100-leetcode-questions/</link>
+      <pubDate>Fri, 29 Apr 2022 19:32:45 +0000</pubDate>
+      
+      <guid>https://wsmbsbbz.github.io/posts/summary-for-100-leetcode-questions/</guid>
+      <description>年初的时候我定下了今年刷够 300 道 LeetCode 算法题的目标，到 4 月 21 日，我已经刷够了100道题，按照每 4 个月 100 道题来算，今年的目标应该是能够达成的。
+学而不思则罔，利用 4 月底的这几天时间，我对我的刷题心得做一个简单的总结。
+算法题，其实也就这么回事 年初我刚开始写 LeetCode 的时候，真是连个简单题都没有思路，写不出来。我一度感觉十分沮丧，感觉自己智商受到打击了，但这其实是再正常不过的情况了，写代码本身就是需要很长时间学习思考、经历很久的练习之后才能做好的事情。
+LeetCode 的评论区很有趣，大伙都喜欢在这里自黑：
+大伙也很幽默：
+所以说大家刚开始写算法题的时候都是差不多的情况。好在这个过程持续不了太久，大概做到二三十题的时候，基本上绝大多数的题型都遇到一遍了，这个时候再遇到见过的题型的时候就逐渐能自己解出来题了。
+说到底，常见的算法题的解法大概只有以下这么几类：
+哈希表 递归、回溯 滑动窗口 双指针 动态规划 二分查找 栈 少见的有如下几类：
+自动机 数学 位运算 贪心 分治 涉及到的常见数据结构：
+哈希表 栈 字符串 链表 树 所以说，算法的框架其实并不大，其中重要且常见的内容并不算多，但是需要长久的练习和总结。一种题目做得多了，再看到同类型的，下意识就能想到合适的做法了，比如说：
+看到题目中要求 O(log n) 的时间复杂度，那这道题目大概率和 二分查找 有关系 题目要求判断一个括号数组或字符串能否正确闭合，那这道题目很有可能要用 栈 来做 根据题目中给出的参数的变化，如果内部要执行不同层级的循环，那这道题目很有可能要用 递归 或 回溯 来做 …… 这让我想起来了我打游戏的一些体会，职业选手们玩游戏的时候，总能一瞬间判断清楚局势、开始决策、再做出反应，在外人看来就有种**“操作看起来很流畅”或“掌控局势走向”的感觉，而自己打游戏的时候在同样的时间内只能注意到比较少的信息**，这些职业选手们能够发觉到任何一丁点的细节和机会，哪怕只有一个眼位，也能够影响到整个战局。算法能力也会给我们带来编程的这种**“敏感性”**，让我们在想要实现一个功能的时候，下意识能想到最简洁、优美的写法。
+事实证明，刷算法题确实提高了我的代码水平。我原来写了一个 Python 程序，能够按照我的输入给我随机生成一个数组，方便我用作 LeetCode 题目的测试用例：
+注意，这里有个 Repetition 选项，控制着生成的数组中能否出现重复的元素。这就涉及到列表元素去重的问题，起初我是将列表转化为集合，然后再转化成列表，然后再判断列表的长度是否等于输入的 amount 值，大致是这个样子：</description>
+    </item>
+    
+    <item>
+      <title>我写代码的神兵利器 —— NeoVim</title>
+      <link>https://wsmbsbbz.github.io/posts/my-lua-neovim-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wsmbsbbz.github.io/posts/my-lua-neovim-config/</guid>
+      <description>前言 最近几天参考 LunarVim/Neovim-from-scratch 把我的 NeoVim 配置从 VimScript 转换为纯 Lua 了。
+我原来用 NeoVim 只是写点 demo 和小脚本，凑合配置了个好看的主题和代码补全就已经能满足我的使用要求了。但是最近我在学习麻省理工的操作系统课程 MIT6.S081，这个课程的 Labs 需要查看和修改 xv6 操作系统的代码，这是一个比较庞大的项目，我的 NeoVim 配置就有点不够看了，于是最近几天我就重写了一套配置，目前已经达到了理想中的效果。
+GitHub: wsmbsbbz/lua-nvim-config
+功能介绍 配置结构如下
+. ├── README.md ├── init.lua # 导入 ./lua/user 目录下的 lua 模块 ├── lua │ └── user │ ├── alpha.lua # 更改默认启动界面 │ ├── autopairs.lua # 闭合括号 │ ├── bufferline.lua # 美化打开的 Buffers 和 Tabs │ ├── cmp.lua # 自动补全 │ ├── colorscheme.lua # 主题配色 │ ├── gitsigns.</description>
+    </item>
+    
+  </channel>
+</rss>
