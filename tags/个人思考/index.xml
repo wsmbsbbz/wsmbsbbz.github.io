@@ -25,20 +25,6 @@
     </item>
     
     <item>
-      <title>MIT6.824 MapReduce实验记录</title>
-      <link>https://wsmbsbbz.github.io/posts/mit6.824-lab1-mapreduce/</link>
-      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://wsmbsbbz.github.io/posts/mit6.824-lab1-mapreduce/</guid>
-      <description>Lab用时：13小时
-注：6.824 在2022年春季添加了一个新的jobcount test，但由于我看不懂这个测试代码。经我测试，本文的程序能通过2021年的所有test cases，但是2022年的测试会jobcount test FAIL
-实验分析 用Go实现MapReduce的Coordinator(Master)和Worker程序。MapReduce程序模型见下图，paper和Lecture中讲的非常详细，不再过多介绍。
-结构设计 RPC 首先是RPC参数的设计，定义一个Task结构体，Coordinator应该根据Task来维护整个MapReduce的状态和进度，Worker也应该能从Task中获取到足够的数据进行Map和Reduce
-type Task struct { TaskNum int // task编号 TaskType int // map: 1, reduce: 2, taskAllDone: 3 FName string // 待读取的文件名称 NMap int // map tasks数量 NReduce int // reduce tasks数量，MapReduce结束之后要生成NReduce个output files } Coordinator Coordinator要用一个mutex锁来原子化更改和读取它的字段，防止发生race，以此保证MapReduce进程的状态和进度正确。
-type Coordinator struct { mu sync.Mutex state int // mapping: 1, reducing: 2, allDone: 3 nMap int // map tasks数量 mTasks []mapTask // map tasks状态数组 mapDoneCount int // 已完成的map tasks数量 nReduce int // reduce tasks数量 rTasks []reduceTask // reduce tasks状态数组 reduceDoneCount int // 已完成的reduce tasks数量 } type mapTask struct { fName string // Worker执行Map时读取的文件名 state int // map task状态 beginTime time.</description>
-    </item>
-    
-    <item>
       <title>“时间记录法”阶段性总结</title>
       <link>https://wsmbsbbz.github.io/posts/summary-for-time-tracking/</link>
       <pubDate>Mon, 09 May 2022 00:37:54 +0000</pubDate>

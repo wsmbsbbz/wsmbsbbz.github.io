@@ -10,7 +10,21 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MIT6.824 Raft-Leader Election实验记录</title>
+      <link>https://wsmbsbbz.github.io/posts/mit6.824-lab2a-leader-election/</link>
+      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wsmbsbbz.github.io/posts/mit6.824-lab2a-leader-election/</guid>
+      <description>Lab用时：9小时
+实验分析 实现Raft的Leader Election机制，保证peers能够正常选出唯一的Leader，并且在Leader故障（或网络故障）之后能够重新选举出新的Leader。
+Raft paper中的Figure 2涵盖了这个Lab需要实现的所有功能，我们目前只需要关注和Leader Election有关的数据结构和要求即可。
+结构设计 一些常量 const ( // Raft.state Leader = 1 Candidate = 2 Follower = 3 // timing MinTick = 200 * time.Millisecond TickInterval = 300 * time.Millisecond HeartbeatInterval = 100 * time.Millisecond timerLoop = 20 * time.Millisecond ) 我选择的heartbeat间隔是100ms，election timeout在200到500ms之间。timerLoop是每次检查heartbeat和election是否到期的间隔，也可以按照Raft Lab的第二部分的建议改用sync.Cond。
+Raft 除了已经给出的部分字段外，我这里还实现了以下的字段。
+type Raft struct { currentTerm int // 当前term号 votedFor int // votedFor = -1表明当前term还未投票时 // for leader election: state int // leader, candidate, follower votes int // candidate竞选过程中收到的票数 heartbeat time.</description>
+    </item>
+    
     <item>
       <title>2022年10月总结</title>
       <link>https://wsmbsbbz.github.io/posts/2022-10-time-tracking/</link>
