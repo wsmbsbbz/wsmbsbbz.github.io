@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wsmbsbbz.github.io/posts/mit6.824-lab2a-leader-election/</loc>
-    <lastmod>2022-11-11T00:00:00+00:00</lastmod>
+    <loc>https://wsmbsbbz.github.io/posts/mit6.824-lab2b-log/</loc>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wsmbsbbz.github.io/posts/</loc>
-    <lastmod>2022-11-11T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wsmbsbbz.github.io/</loc>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wsmbsbbz.github.io/posts/mit6.824-lab2a-leader-election/</loc>
     <lastmod>2022-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wsmbsbbz.github.io/posts/2022-10-time-tracking/</loc>

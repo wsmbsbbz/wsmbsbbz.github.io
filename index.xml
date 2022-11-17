@@ -10,7 +10,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MIT6.824 Raft-Log实验记录</title>
+      <link>https://wsmbsbbz.github.io/posts/mit6.824-lab2b-log/</link>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wsmbsbbz.github.io/posts/mit6.824-lab2b-log/</guid>
+      <description>Lab用时：14.5小时
+实验分析 本实验要让Raft在在上一个Leader Election的基础上，对clients的请求做出响应，接受clients的command，并在command被安全committed后响应clients。
+Raft paper中的Figure 2仍然是最有价值的参照：
+我们需要实现：
+leader要能够把Start方法的command参数append到自身的log中，然后通过AppendEntries RPC把log发送给别的peers。 followers不能仅把AppendEntries RPC当作heartbeat，还要把RPC参数和自己的log比较，并在恰当的时机修改自身的log相关的字段，并返回Figure 2要求的reply。 注意上一个Leader Election lab中并没有要求实现paper中5.4.1章节的Election Restriction，我们还需要在RequestVote RPC handler中实现。 结构设计 这里只写相较于Leader Election需要增添或更改的部分。
+logEntry 除了必须的Term和Command字段外，我也把log的Index写入了logEntry中，这样代码会更加简洁，详见我后面踩坑部分的解释。
+type logEntry struct { Index int Term int Command interface{} } Raft 除了Leader Election中已经实现的字段外，对于这个lab，我加上了这些字段：
+type Raft struct { log []logEntry // 自身的log条目 commitIndex int // 最近一次commit的log的index，要保证这个字段只能单增 sequreCommit int // 可以安全commit的log的index // paper中nextIndex字段我没有用到，实测只需要matchIndex就足够了，维护nextIndex的状态反而会使代码逻辑更加复杂 matchIndex []int // 长度为peers的数量，表明当前peer和别的peers匹配成功的最大log index applyCh chan ApplyMsg // 每当commitIndex递增时，就应该向applyCh发送一个ApplyMsg，以供Tester测试 } RequestVoteArgs Leader Election只需要Term和CandidateId，若要实现5.</description>
+    </item>
+    
     <item>
       <title>MIT6.824 Raft-Leader Election实验记录</title>
       <link>https://wsmbsbbz.github.io/posts/mit6.824-lab2a-leader-election/</link>
