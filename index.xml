@@ -10,7 +10,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 17 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MIT6.824 Raft-Persistence实验记录</title>
+      <link>https://wsmbsbbz.github.io/posts/mit6.824-lab2c-persistence/</link>
+      <pubDate>Fri, 25 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wsmbsbbz.github.io/posts/mit6.824-lab2c-persistence/</guid>
+      <description>Lab用时：3.5小时
+实验分析 本实验要让Raft在在上一个Leader Election和Log的基础上，对Raft的部分数据进行持久化，以便于能在Raft服务器发生故障后，Raft还能恢复crash之前的状态。
+我们需要实现：
+persist()方法把Raft的状态数据编码成字符，存储到实验提供的persister结构中 readPersist()方法解码persister结构中的数据，并恢复Raft的部分状态 选择合适的时机对Raft调用persist()和readPersist()方法 这部分lab的测试涉及到Leader Election和Log中没检测到的一些极端条件，因此可能会需要修改部分旧代码才能跑通所有测试 结构设计 这一部分lab不涉及到新增结构。
+逻辑设计 这一部分的lab非常简单，也给出了操作persister结构的样例代码，基本上照抄即可，一共也只有十几行，不再赘述。
+踩坑 TestFigure8Unreliable2C会报apply error，参考Students&amp;rsquo; Guide to Raft的term confusion部分，在RPC请求回复之后，检测一下args.Term和rf.currentTerm是否相等，不相等的话直接return即可。
+rf.mu.Unlock() rf.sendRPC(i, args, reply) rf.mu.Lock() if rf.currentTerm != args.Term { return } 优化空间 尚未想出。
+总结 比较简单，没什么总结。</description>
+    </item>
+    
     <item>
       <title>MIT6.824 Raft-Log实验记录</title>
       <link>https://wsmbsbbz.github.io/posts/mit6.824-lab2b-log/</link>
