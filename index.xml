@@ -10,7 +10,21 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wsmbsbbz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022年11月总结</title>
+      <link>https://wsmbsbbz.github.io/posts/2022-11-time-tracking/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://wsmbsbbz.github.io/posts/2022-11-time-tracking/</guid>
+      <description>月总专注时间：4935min
+最大值：435min
+最小值：0min
+平均每日专注时间：165min
+主要做的事情： 学习MIT6.824 完成了Lab Raft的Log和Persistence部分 读书： 《当我们不再理解世界》——本哈明·拉巴图特 LeetCode算法题44道 3场LeetCode周赛/双周赛 写了三篇博客MIT6.824 Raft-Leader Election实验记录、MIT6.824 Raft-Log实验记录、MIT6.824 Raft-Persistence实验记录 发现的问题： 月底几天沉迷原神，没怎么学习 日均专注时长虽然比10月要高，但距离240min的目标仍有较大差距 MIT6.824课程需要耗费的时间比我预想中的要长 学习进度推进不规律，状态时好时坏 漫无目的地刷LeetCode导致算法能力提高缓慢，进入瓶颈期 一些统计： 英语词汇量：7000 打字速度： 中文：85 英文：310 咖啡：19天 LeetCode竞赛分：1737 这个月开始刻意学习英语语法，感觉到理解长难句的能力有提高，预计下个月能熟悉大致的语法框架，希望能提高我的英语阅读速度。
+距离春招已经不剩多少时间了，下个月要加大学习强度，尽快完成MIT6.824课程。也要更有计划地刷LeetCode，按照题目类型进行专项练习。</description>
+    </item>
+    
     <item>
       <title>MIT6.824 Raft-Persistence实验记录</title>
       <link>https://wsmbsbbz.github.io/posts/mit6.824-lab2c-persistence/</link>
